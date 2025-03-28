@@ -1,0 +1,163 @@
+:root {
+    --primary-color: #3B82F6;
+    --secondary-color: #1E40AF;
+    --background-color: #F3F4F6;
+    --text-color: #1F2937;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-image: linear-gradient(to right, #fff4fd, #e5f2ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.container {
+    background-color: var(--white);
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 750px;
+    padding: 40px;
+    text-align: left;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.header-icon {
+    background-color: #4CAF50;
+    padding: 6px;
+    border-radius: 8px;
+    color: white;
+    margin-right: 10px;
+}
+
+.warning-banner {
+    background-color: #FEE2E2;
+    color: #991B1B;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.warning-banner i {
+    margin-right: 10px;
+    color: #EF4444;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: black;
+    font-size: 14px;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 10px 35px 10px 12px;
+    border: 2px solid #E5E7EB;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.input-wrapper i {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9CA3AF;
+    font-size: 14px;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn:hover {
+    background-color: var(--secondary-color);
+}
+
+.btn-stop {
+    background-color: #EF4444;
+}
+
+.btn-stop:hover {
+    background-color: #DC2626;
+}
+
+.timer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #EF4444;
+    font-weight: 600;
+    text-align: center;
+}
+
+.call-log {
+    margin-top: 20px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #E5E7EB;
+    border-radius: 8px;
+}
+
+.call-log-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #E5E7EB;
+    font-size: 12px;
+}
+
+.status-completed {
+    color: #10B981;
+}
+
+.status-failed {
+    color: #EF4444;
+}
+
+.status-not-connected {
+    color: #F59E0B;
+}
